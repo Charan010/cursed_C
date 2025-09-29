@@ -6,7 +6,6 @@ int parent[N];
 int rank[N];
 int weights[N];
 
-
 void make_set(int n){
     for(int i = 0 ; i < n ; ++i){
         parent[i] = i;
@@ -14,7 +13,6 @@ void make_set(int n){
         weights[i] = 0;   
     }
 }
-
 
 int find(int x){
     if(parent[x]!=x){
